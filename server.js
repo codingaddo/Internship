@@ -14,11 +14,16 @@ const DB = process.env.DATABASE.replace(
 );
 
 mongoose.connect(DB, {}).then(() => console.log("DB connected successful"));
-
-const server = http.createServer(app);
-
 const PORT = process.env.PORT || 3000;
 
-server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
+
+// const server = http.createServer(app);
+
+// const PORT = process.env.PORT || 3000;
+
+// server.listen(PORT, () => {
+//   console.log(`Server running on port ${PORT}`);
+// });
