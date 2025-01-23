@@ -21,7 +21,7 @@
   "scripts": {
     "start": "nodemon server.js"
   },
-  "name": "skillhub-api",
+  "name": "internship-posting",
   "version": "1.0.0",
   "main": "app.js",
   "author": "",
